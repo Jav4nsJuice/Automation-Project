@@ -7,9 +7,9 @@ begin require 'rspec/expectations'; rescue LoadError; require 'spec/expectations
     #PTravel Settings
     # ENV['USER']="Pepazo"
     # ENV['PSW']="ILoveQA"
-    ENV['USER_V']="voluntario@gmailcom"
-    ENV['USER_L']="lider@gmailcom"
-    ENV['USER_C']="coreteam@gmailcom"
+    ENV['USER_V']="voluntario@gmail.com"
+    ENV['USER_L']="lider@gmail.com"
+    ENV['USER_C']="coreteam@gmail.com"
     ENV['PSW']="123456"
     
     
