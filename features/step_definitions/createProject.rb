@@ -132,8 +132,37 @@ end
     puts find(:css,'#root > div:nth-child(2) > div:nth-child(2) > div > div.MuiContainer-root.jss32.MuiContainer-maxWidthLg > div > div:nth-child(1)').select("en progreso")
   end
 
-  # And I should see the description "Es un evento para recaudar fondos"
+  # I should see the description "Es un evento para recaudar fondos"
+  Then(/^I should see the state I selected "en progreso""/) do
+    #Needs to change the css 
+    puts find(:css,'#root > div:nth-child(2) > div:nth-child(2) > div > div.MuiContainer-root.jss32.MuiContainer-maxWidthLg > div > div:nth-child(1)').select("Es un evento para recaudar fondos")
+  end
 
+  # I should see the objective I gave "Se requiere recaudar 1000$ para una obra benéfica"
+  Then(/I should see the objective I gave "Se requiere recaudar 1000$ para una obra benéfica"/) do
+    #Needs to change the css 
+    puts find(:css,'#root > div:nth-child(2) > div:nth-child(2) > div > div.MuiContainer-root.jss32.MuiContainer-maxWidthLg > div > div:nth-child(1)').select("Se requiere recaudar 1000$ para una obra benéfica")
+  end
+
+  # I should see the leader I chose "Inge"
+  Then(/I should see the leader I chose "Inge"/) do
+    #Needs to change the css 
+    puts find(:css,'#root > div:nth-child(2) > div:nth-child(2) > div > div.MuiContainer-root.jss32.MuiContainer-maxWidthLg > div > div:nth-child(1)').select("Inge")
+  end
+
+  # I should see the category I selected "Trabajo Social"
+  Then(/I should see the category I selected "Trabajo Social"/) do
+    #Needs to change the css 
+    puts find(:css,'#root > div:nth-child(2) > div:nth-child(2) > div > div.MuiContainer-root.jss32.MuiContainer-maxWidthLg > div > div:nth-child(1)').select("Trabajo Socia")
+  end
+
+  # I should see the state I selected "en progreso"
+  Then(/I should see the state I selected "en progreso"/) do
+    #Needs to change the css 
+    puts find(:css,'#root > div:nth-child(2) > div:nth-child(2) > div > div.MuiContainer-root.jss32.MuiContainer-maxWidthLg > div > div:nth-child(1)').select("en progreso")
+  end
+
+  # I click in the submit Crear Proyecto button inside the form 
   When(/^I click in the submit Crear Proyecto button inside the form/) do
     xpath_base = '//*[@id="root"]/div[2]/header/div[2]/div/button[2]'
     find(:xpath, xpath_base).click
