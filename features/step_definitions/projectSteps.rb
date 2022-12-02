@@ -16,6 +16,7 @@
    
   end
     
+  # Then I see the categorie list of projects
   Then(/^I see the categories list of projects/) do
     puts find(:css,'#root > div:nth-child(2) > div:nth-child(2) > div > div.MuiContainer-root.jss32.MuiContainer-maxWidthLg > div > div:nth-child(1)').text
     puts find(:css,'#root > div:nth-child(2) > div:nth-child(2) > div > div.MuiContainer-root.jss32.MuiContainer-maxWidthLg > div > div:nth-child(2)').text
