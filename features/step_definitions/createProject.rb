@@ -1,11 +1,11 @@
- # And I click  in the Proyectos link
- When(/^I click in the Proyectos link/) do
+ # And I press the button Proyectos
+ When(/^I press the button Proyectos$/) do
   css = '#root > div:nth-child(2) > header > div.header-menu > div > button:nth-child(2)'
   find(:css, css).click
 end
 
-  # And I click  in the Crear Proyecto button
-  When(/^I click in the Crear Proyecto button/) do
+# And I press the button Crear Proyecto 
+  When(/^I press the button Crear Proyecto$/) do
     xpath_base = '/html/body/div/div[2]/div[1]/div/div[1]/div/div[2]/button'
     find(:xpath, xpath_base).click
   end
