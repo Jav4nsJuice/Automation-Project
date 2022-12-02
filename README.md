@@ -46,6 +46,9 @@ If gem need previous versions follow the instructions given at the moment of ins
 
 Most common commands(run all commands from root directory):
 
+## for all scenarios in all the feature archives 
+cucumber features
+
 ## for all scenarios in a feature archive
 cucumber features/"archive.feature"
 
@@ -58,9 +61,10 @@ Features folder contains:
 - All of the feature archives developed
 - support folder: 
     - Contains Configurations with cucumber and capybara
+    - Contains the variables used in the steps ( Users and passwords)
 
 - step_definitions folder:
-    - Contains the .rb archives in which we developed the steps to test the scenarios written in th features
+    - Contains the .rb archives in which we developed the steps to test the scenarios written in the features
 
 - Reports folder contains:
     - All the reports made from the results of the scenarios.
