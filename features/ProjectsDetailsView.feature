@@ -1,5 +1,5 @@
 Feature: View Details of Projects which are on progress
-  As a volunteer or leader
+  As a member of the StartApp Organization
   I want to check the details of a project
   So that I get to know those details and decide wheter to participate or not on it
 

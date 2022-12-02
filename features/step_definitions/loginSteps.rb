@@ -61,7 +61,7 @@ end
 
 # And the Iniciar Sesión button is not enabled
 Then(/^the Iniciar Sesión button is not enabled$/) do
-    puts find(:xpath,'//*[@id="root"]/div[2]/div[1]/div/div[2]/div[2]/div/form/div/button').disabled?
+    find(:xpath,'//*[@id="root"]/div[2]/div[1]/div/div[2]/div[2]/div/form/div/button').disabled?
 end
 
 # And I select an account already registered as a voluntario

@@ -1,10 +1,10 @@
 Feature: Login into the StartApp website 
-  In order to verify that can do a Login on the website 
+  In order to verify that I can access in the StartApp Americas Together website 
   As a  member of the organization Start Americas Together
   I should be able to login using proper credentials
  
   @1
-  Scenario: Login with proper credentials
+  Scenario Outline: Login with proper credentials
     Given I am at the StartApp Login Page
     When I insert a valid username "<email>"
     And I insert a valid password
@@ -16,7 +16,7 @@ Feature: Login into the StartApp website
     And I can see the Icon link
 
   @2
-  Scenario: Login with incorrect credentials
+  Scenario Outline: Login with incorrect credentials
     Given I am at the StartApp Login Page
     When I insert a valid username "<email>"
     And I insert a incorrect password 1234567
@@ -32,7 +32,7 @@ Feature: Login into the StartApp website
     And the Iniciar Sesión button is not enabled
 
   @4
-  Scenario: Login with a Google Account
+  Scenario Outline: Login with a Google Account
     Given I am at the StartApp Login Page
     When I press the button Iniciar con Google
     And I select an account already registered as a "<registered_as>"
@@ -47,3 +47,4 @@ Feature: Login into the StartApp website
    | voluntario@gmail.com  | voluntario |
    | lider@gmail.com  | lider |
    | coreteam@gmail.com  | coreteam |
+
