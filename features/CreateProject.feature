@@ -5,14 +5,14 @@ Feature: Create a project as a Coreteam user
 
   Background: Login with proper credentials
     Given I am at the StartApp Login Page
-    When I insert a valid coreteam username coreteam@gmail.com
-    And I insert a valid coreteam password 123456
+    When I insert a valid username coreteam@gmail.com
+    And I insert a valid password
     And I press the button Iniciar Sesión
 
   @1
   Scenario: Create a new project 
-    When I click in the Proyectos link 
-    And I click in the Crear Proyecto button
+    When I press the button Proyectos 
+    And I press the button Crear Proyecto 
     And I fill the start date with 12 12 2022
     And I select an end date with 21 12 2022
     And I fill the projects name with Prueba
@@ -34,16 +34,4 @@ Feature: Create a project as a Coreteam user
     And I should see the leader I chose "Inge"
     And I should see the category I selected "Trabajo Social"
     And I should see the state I selected "en progreso"
-
-  Scenario: See the projects details 
-    When I click the Proyectos link
-    And I click in the Trabajo Social category
-    And I press the Ver detalles button of the project named Prueba 
-    Then I see the project's name Prueba 
-    And I should see the start date 12/12/2022
-    And I should see the end date 21/12/2022
-    And I should see the description "Es un evento para recaudar fondos"
-    And I should see the objective "Se requiere recaudar 1000$ para una obra benéfica"
-    And I should see the leader "Inge"
-    And I should see the category "Trabajo Social"
 
