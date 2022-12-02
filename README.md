@@ -59,13 +59,13 @@ Features folder contains:
 - support folder: 
     - Contains Configurations with cucumber and capybara
 
--step_definitions folder:
+- step_definitions folder:
     - Contains the .rb archives in which we developed the steps to test the scenarios written in th features
 
-Reports folder contains:
+- Reports folder contains:
     - All the reports made from the results of the scenarios.
 
-Use the following command to create reports:
+    - Use the following command to create reports:
     cucumber features/"archive.feature" --format html --out reports/helloworld.html
 
 
